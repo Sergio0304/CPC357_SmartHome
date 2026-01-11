@@ -38,14 +38,14 @@ Both modules communicate through **MQTT** and can be monitored and controlled us
             └──────┬───────┘
                    │ MQTT
     ┌──────────────┼─────────────────┐
-    │                                │
+    │                                      │
 ┌───────▼────────┐ ┌──────────▼──────────┐
-│ Smart Door     │ │       AI Window     │
-│ (Arduino R4)   │ │      (ESP32-S3)     │
-│                │ │                     │
-│ NFC + Servo    │ │ INMP441 Mic + Servo │
-│ PIR + Alarm    │ │ Rain + Temp + Button│
-└────────────────┘ └─────────────────────┘
+│ Smart Door │ │ AI Window │
+│ (Arduino R4) │ │ (ESP32-S3) │
+│ │ │ │
+│ NFC + Servo │ │ INMP441 Mic + Servo │
+│ PIR + Alarm │ │ Rain + Temp + Button │
+└────────────────┘ └───────────────────────┘
 
 
 ---
