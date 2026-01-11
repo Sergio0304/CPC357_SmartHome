@@ -28,28 +28,6 @@ Both modules communicate through **MQTT** and can be monitored and controlled us
 - Manual button override
 - MQTT-based monitoring and control
 
----
-
-## 🧱 Overall System Architecture
-
-            ┌──────────────┐
-            │ Node-RED UI  │
-            │ Dashboard    │
-            └──────┬───────┘
-                   │ MQTT
-    ┌──────────────┼─────────────────┐
-    │                                      │
-┌───────▼────────┐ ┌──────────▼──────────┐
-│ Smart Door │ │ AI Window │
-│ (Arduino R4) │ │ (ESP32-S3) │
-│ │ │ │
-│ NFC + Servo │ │ INMP441 Mic + Servo │
-│ PIR + Alarm │ │ Rain + Temp + Button │
-└────────────────┘ └───────────────────────┘
-
-
----
-
 # 🔐 Smart Door Security System
 
 ## 🎯 Features
